@@ -1,7 +1,10 @@
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
-  background-color: black;
-  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  font-family: 'Roboto Mono';
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }

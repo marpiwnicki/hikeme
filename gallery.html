@@ -1,12 +1,15 @@
 <html>
 
 <head>
-	<title>Material Photo Gallery</title>
+	<title>Gallery</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	<link rel="stylesheet" href="dist/css/material-photo-gallery.css">
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -21,12 +24,16 @@
 			<div id="link"> Home </div>
 		</a>
 	</div>
+
+
+
+	<div class="empty-space"></div>
 	<div class="m-p-g">
 		<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
 			<img src="img\thumbnails\austria-1.jpg" data-full="img\highres\austria-1.jpg" class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\austria-2.jpg" data-full="img\highres\austria-2.jpg" class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\austria-3.jpg" data-full="img\highres\austria-3.jpg" class="m-p-g__thumbs-img" />
-			<img src="img\thumbnails\bieszczady-1.jpg" data-full="img\highres\bieszczady-1.jpg" class="m-p-g__thumbs-img" />
+			<img src="img\thumbnails\bieszczady-1.jpg" data-full=class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\bieszczady-2.jpg" data-full="img\highres\bieszczady-2.jpg" class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\nz-1.jpg" data-full="img\highres\nz-1.jpg" class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\swiss-1.jpg" data-full="img\highres\swiss-1.jpg" class="m-p-g__thumbs-img" />
@@ -35,19 +42,26 @@
 			<img src="img\thumbnails\swiss-4.jpg" data-full="img\highres\swiss-4.jpg" class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\swiss-5.jpg" data-full="img\highres\swiss-5.jpg" class="m-p-g__thumbs-img" />
 			<img src="img\thumbnails\swiss-6.jpg" data-full="img\highres\swiss-6.jpg" class="m-p-g__thumbs-img" />
-
 		</div>
 		<div class="m-p-g__fullscreen"></div>
 	</div>
 
+
+	<div id="separator" data-aos="fade-up" data-aos-duration="3000">
+		<div><img src="img\highres\bieszczady-1.jpg" alt="" ></div>
+	</div>
+
+
 	<script src="dist/js/material-photo-gallery.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		var elem = document.querySelector('.m-p-g');
-
 		document.addEventListener('DOMContentLoaded', function() {
 			var gallery = new MaterialPhotoGallery(elem);
 		});
+		AOS.init();
 	</script>
+
 </body>
 
 </html>

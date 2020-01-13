@@ -5,6 +5,42 @@ body {
   font-family: 'Roboto Mono';
   -ms-overflow-style: none;
 }
+
 body::-webkit-scrollbar {
   display: none;
+}
+
+div#separator {
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1000px;
+  max-height: 1000px;
+  z-index: 0;
+  /* max-height: 800px; */
+}
+
+div#separator div {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  font-size: 0;
+}
+
+div#separator div img {
+  width: 20%;
+  background-position-y: 200px;
+  float: left;
+}
+
+
+[data-aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[data-aos="fade"].aos-animate {
+  opacity: 1;
 }

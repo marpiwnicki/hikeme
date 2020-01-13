@@ -7,3 +7,4 @@ Lightroom Image resolution - https://clickitupanotch.com/exporting-photos-from-l
 Simple slider - https://www.cssscript.com/demo/basic-pure-css-image-slider-slider-css/  
 Gallery - https://www.cssscript.com/material-inspired-nice-responsive-photo-gallery/
 Image resize - https://www.iloveimg.com/
+Animation on scroll - http://michalsnik.github.io/aos/

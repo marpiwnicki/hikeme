@@ -35,6 +35,14 @@ div#separator div img {
   float: left;
 }
 
+div#logo {
+  margin-top: 100px;
+  text-align: center;
+}
+
+div#logo img {
+  width: 100px;
+}
 
 [data-aos="fade"] {
   opacity: 0;

@@ -1,0 +1,111 @@
+div.image-separator {
+  width: 100%;
+  height: 600px;
+  line-height: 600px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-position-y: 70%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 3s ease-out;
+}
+
+div.image-separator:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  background-position-y: 40%;
+}
+
+div.image-separator-text {
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 30px;
+  opacity: 0;
+  transition: 3s ease-out;
+}
+
+div.image-separator-text:hover {
+  letter-spacing: 35px;
+  opacity: 0.8;
+}
+
+div.ninebox {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  /* margin-right: 20%; */
+}
+
+div.cell {
+  width: 180px;
+  height: 180px;
+  background: red;
+  margin: 0 auto;
+  float: left;
+  border: solid;
+  border-width: 10px;
+  border-color: white;
+  background-image: URL('../img/highres/bieszczady-2.jpg');
+  background-size: 300px;
+  background-position: center;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+div.cell:hover {
+  opacity: 1;
+  background-size: 330px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  opacity: 0.2;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(0,0,0, 0.2);
+  border-right: 1.1em solid rgba(0,0,0, 0.2);
+  border-bottom: 1.1em solid rgba(0,0,0, 0.2);
+  border-left: 1.1em solid #000000;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

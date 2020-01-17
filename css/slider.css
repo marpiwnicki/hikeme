@@ -64,3 +64,25 @@ div#slider div img {
     left: -400%;
   }
 }
+
+div#counter {
+  height: 5px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.2;
+  z-index: 1;
+  animation: 4s counter infinite;
+}
+
+@keyframes counter {
+  0% {
+    width: 0%;
+  }
+  80% {
+    width: 100%;
+  }
+  81% {
+    width: 0%;
+  }
+}

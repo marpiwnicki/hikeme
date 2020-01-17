@@ -8,3 +8,5 @@ Simple slider - https://www.cssscript.com/demo/basic-pure-css-image-slider-slide
 Gallery - https://www.cssscript.com/material-inspired-nice-responsive-photo-gallery/
 Image resize - https://www.iloveimg.com/
 Animation on scroll - http://michalsnik.github.io/aos/
+Spinner - https://smallenvelop.com/display-loading-icon-page-loads-completely/
+Polygons - https://bennettfeely.com/clippy/

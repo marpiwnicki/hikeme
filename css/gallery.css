@@ -1,3 +1,14 @@
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  opacity: 0.6;
+  letter-spacing: 10px;
+  color: black;
+}
+
 div.image-separator {
   width: 100%;
   height: 600px;
@@ -41,24 +52,29 @@ div.ninebox {
 }
 
 div.cell {
-  width: 180px;
-  height: 180px;
-  background: red;
+  width: 198px;
+  height: 198px;
+  background: white;
   margin: 0 auto;
   float: left;
   border: solid;
-  border-width: 10px;
+  border-width: 1px;
   border-color: white;
-  background-image: URL('../img/highres/bieszczady-2.jpg');
-  background-size: 300px;
+  background-size: 380px;
   background-position: center;
   opacity: 0.8;
-  transition: 0.3s;
+  transition: 1s;
+  -webkit-filter: grayscale(10%);
+  -moz-filter: grayscale(10%);
+  filter: grayscale(10%);
 }
 
 div.cell:hover {
   opacity: 1;
-  background-size: 330px;
+  background-size: 370px;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 img {
@@ -67,45 +83,8 @@ img {
   background-size: cover;
 }
 
-.loader,
-.loader:after {
-  border-radius: 50%;
-  width: 5em;
-  height: 5em;
-  opacity: 0.2;
-}
-.loader {
-  margin: 60px auto;
-  font-size: 10px;
-  position: relative;
-  text-indent: -9999em;
-  border-top: 1.1em solid rgba(0,0,0, 0.2);
-  border-right: 1.1em solid rgba(0,0,0, 0.2);
-  border-bottom: 1.1em solid rgba(0,0,0, 0.2);
-  border-left: 1.1em solid #000000;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load8 1.1s infinite linear;
-  animation: load8 1.1s infinite linear;
-}
-@-webkit-keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes load8 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+div.image {
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
 }

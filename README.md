@@ -10,3 +10,4 @@ Image resize - https://www.iloveimg.com/
 Animation on scroll - http://michalsnik.github.io/aos/
 Spinner - https://smallenvelop.com/display-loading-icon-page-loads-completely/
 Polygons - https://bennettfeely.com/clippy/
+Handlebars - https://handlebarsjs.com/

@@ -10,17 +10,17 @@
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
   <script src="js/jquery.min.js"></script>
   <script src="js/modernizr.js"></script>
   <script src="js/load.js"></script>
+  <script src="js/templates.js"></script>
 
 </head>
 
 <body>
-
   <div class="se-pre-con"></div>
-
-
   <div id="menu">
     <a href="about.html">
       <div id="link"> About </div>
@@ -34,70 +34,74 @@
   </div>
 
   <div style="width:100%; height:300px"></div>
-  <div style="width:100%; height:100px"><P>HIKE</br>ME</P>  </div>
+  <div style="width:100%; height:100px">
+    <P>HIKE</br>ME</P>
+  </div>
   <div style="width:100%; height:300px"></div>
 
-  <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-    <a href="html/gallery/bieszczady.html">
-    <div class="image-separator" style="background-image: URL('img/highres/bieszczady-1.jpg');">
-      <div class="image-separator-text">BIESZCZADY</div>
-    </div>
-    <div style="width:100%; height:200px"></div>
-  </a>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/polish-bieszczady.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/bieszczady-1.jpg');">
+        <div class="gallery-link-text">BIESZCZADY</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
   </div>
 
-  <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-    <div class="image-separator" style="background-image: URL('img/highres/swiss-5.jpg');">
-      <div class="image-separator-text">SWISS ALPS</div>
-    </div>
-    <div style="width:100%; height:200px"></div>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/swiss-alps.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/swiss-5.jpg');">
+        <div class="gallery-link-text">SWISS ALPS</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
   </div>
 
-  <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-    <div class="image-separator" style="background-image: URL('img/highres/austria-1.jpg');">
-      <div class="image-separator-text">AUSTRIAN ALPS</div>
-    </div>
-    <div style="width:100%; height:200px"></div>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/austrian-alps.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/austria-1.jpg');">
+        <div class="gallery-link-text">AUSTRIAN ALPS</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
   </div>
 
-  <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-center">
-    <div class="image-separator" style="background-image: URL('img/highres/nz-1.jpg');">
-      <div class="image-separator-text">NEW ZEALAND</div>
-    </div>
-    <div style="width:100%; height:200px"></div>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/japan.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/japan-1.jpg');">
+        <div class="gallery-link-text">JAPAN</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
   </div>
 
-
-
-
-  <div style="width:100%; height:300px; ">
-    <div class="ninebox" data-aos="fade-up" data-aos-duration="1000">
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-1.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-2.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-3.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-4.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-5.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-6.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-7.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-8.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/bieszczady-9.jpg');"></div>
-    </div>
-  </div>
-  <div style="width:100%; height:300px; ">
-    <div class="ninebox" data-aos="fade-up" data-aos-duration="1000">
-      <div class="cell" style="background-image: URL('img/highres/swiss-1.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-2.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-3.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-4.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-5.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-6.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-1.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-2.jpg');"></div>
-      <div class="cell" style="background-image: URL('img/highres/swiss-3.jpg');"></div>
-    </div>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/new-zealand.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/nz-1.jpg');">
+        <div class="gallery-link-text">NEW ZEALAND</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
   </div>
 
-  <div style="width:100%; height:700px"></div>
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/norway.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/norway-1.jpg');">
+        <div class="gallery-link-text">NORWAY</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
+  </div>
+
+  <div data-aos="fade-up" data-aos-duration="1000">
+    <a href="html/gallery/georgia.html">
+      <div class="gallery-link" style="background-image: URL('img/highres/georgia-1.jpg');">
+        <div class="gallery-link-text">GEORGIA</div>
+      </div>
+      <div class="white-space-200"></div>
+    </a>
+  </div>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

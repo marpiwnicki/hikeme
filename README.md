@@ -11,3 +11,4 @@ Animation on scroll - http://michalsnik.github.io/aos/
 Spinner - https://smallenvelop.com/display-loading-icon-page-loads-completely/
 Polygons - https://bennettfeely.com/clippy/
 Handlebars - https://handlebarsjs.com/
+Favicon on github - https://medium.com/@LazaroIbanez/how-to-add-a-favicon-to-github-pages-403935604460

@@ -86,8 +86,6 @@ div.cell.portrait:hover {
   background-size: 200px;
 }
 
-
-
 div.cell-lr {
   width: 60px;
   height: 60px;
@@ -99,7 +97,7 @@ div.cell-lr {
   border-width: 70px;
   border-color: white;
   background-size: contain;
-  background-position:center;
+  background-position: center;
   opacity: 0.1;
   transition: 1s;
   z-index: -1;
@@ -109,6 +107,32 @@ div.cell-lr:hover {
   transform: rotate(360deg);
 }
 
+div.back-link {
+  width: 100%;
+  height: 80px;
+  opacity: 0.4;
+  transition: 1s;
+}
+
+div.back-link:hover {
+  opacity: 1;
+}
+
+div.cell-unsplash {
+  width: 30px;
+  height: 30px;
+  background: white;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: center;
+  opacity: .3;
+  transition: 0.5s;
+}
+
+div.cell-unsplash:hover {
+  transform: rotate(360deg);
+  opacity: .6;
+}
 
 img {
   width: 100%;
@@ -128,8 +152,12 @@ div.image.portrait {
   background-size: cover;
 }
 
-
 div.white-space-200 {
   width: 100%;
   height: 200px
+}
+
+div.white-space-100 {
+  width: 100%;
+  height: 100px
 }

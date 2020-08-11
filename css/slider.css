@@ -1,17 +1,16 @@
 div#slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-  margin: auto;
-  width: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  margin-top: -100px;
   z-index: 0;
-  /* max-height: 800px; */
 }
 
 div#slider div {
   position: relative;
-  width: 500%;
+  width: 500vw;
   margin: 0;
   left: 0;
   font-size: 0;
@@ -19,8 +18,10 @@ div#slider div {
 }
 
 div#slider div img {
-  width: 20%;
+  width: 100vw;
   float: left;
+  height: 100vh;
+  object-fit: cover;
 }
 
 @keyframes slider {

@@ -7,7 +7,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156533595-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-156533595-1');
@@ -25,6 +28,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/modernizr.js"></script>
   <script src="js/load.js"></script>
@@ -54,24 +58,23 @@
     <div><img src="img\highres\swiss-1.jpg" alt=""></div>
     <div><img src="img\highres\bieszczady-2.jpg" alt=""></div>
   </div>
-  <style>
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-</style>
 
-<div class="footer">
-  <p>Footer</p>
-  <a href="https://unsplash.com/collections/8673721/switzerland" >
-    <div class="cell-unsplash" style="background-image: URL('img/unsplash-icon.png');"></div>
-  </a>
-</div>
+
+  <div class="footer">
+    <div style="margin:auto; width:300px;">
+      <a target="_blank" title="Unsplash" href="https://unsplash.com/@marekpiwnicki">
+        <div class="cell-footer" style="background-image: URL('img/unsplash-icon-white-2.png'); "></div>
+      </a>
+      <a target="_blank" title="Instagram" href="https://www.instagram.com/marekpiwnicki">
+        <div class="cell-footer" target="_blank" style="background-image: URL('img/instagram-icon.png');"></div>
+      </a>
+      <a target="_blank" title="Pictorem" href="https://www.pictorem.com/gallery/Marek.Piwnicki">
+        <div class="cell-footer" target="_blank" style="background-image: URL('img/pictorem-icon.png');"></div>
+      </a>
+    </div>
+
+      <div class="footerText"> © Marek Piwnicki | marpiwnicki@gmail.com<div>
+  </div>
 </body>
 
 </html>

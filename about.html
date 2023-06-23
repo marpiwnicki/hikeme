@@ -7,32 +7,27 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156533595-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-156533595-1');
   </script>
 
-  <meta charset="utf-8">
-
-  <title>About me</title>
-  <meta name="description" content="Photo portfolio">
-  <meta name="author" content="Marek Piwnicki">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <title>Gallery</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="dist/css/material-photo-gallery.css">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
   <script src="js/jquery.min.js"></script>
   <script src="js/modernizr.js"></script>
   <script src="js/load.js"></script>
-
-
+  <script src="js/templates.js"></script>
 
 </head>
 
@@ -51,24 +46,30 @@
     </a>
   </div>
 
+  <div class="image-container"
+    style="width: 100%; height: 800px; background-image: url('/img/highres/germany-austria-3.jpg');">
 
-  <div style="width:100%;height: 100px"></div>
   </div>
+  <!-- <div style="width:100%;height: 100px"></div> -->
+
   <div style="opacity:0.7">
-    <div id="logo" data-aos="fade-up" data-aos-duration="2000">
+    <div id="logo" data-aos="fade-up" data-aos-duration="1000">
       <div><img src="img\logo-transparent.png" alt=""></div>
     </div>
-    <div id="logo" data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" style="margin-top:10px">
+    <div id="logo" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin-top:10px">
       <div> Wake up! </div>
     </div>
-    <div id="logo" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="2000" style="margin-top:10px">
+    <div id="logo" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" style="margin-top:10px">
       <div> Look outside </div>
     </div>
-    <div id="logo" data-aos="fade-up" data-aos-delay="1800" data-aos-duration="2000" style="margin-top:10px">
+    <div id="logo" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" style="margin-top:10px">
       <div> Look inside </div>
     </div>
-    <div id="logo" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="3000" style="margin-top:10px">
+    <div id="logo" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000" style="margin-top:10px">
       <div> Live! </div>
+    </div>
+    <div id="logo" data-aos="fade-up" data-aos-delay="2300" data-aos-duration="1000" style="margin-top:20px;">
+      <div style="font-style: italic; font-size: 13px;"> contact/paypal >> marpiwnicki@gmail.com </div>
     </div>
   </div>
   <!-- <div style="opacity:1">
@@ -76,6 +77,23 @@
       <iframe style="width:100%;padding:20px;min-height:1000px;opacity:1" src="https://www.pictorem.com/gallery/Marek.Piwnicki" allowfullscreen frameborder=0 style="border-width:0px;"></iframe>
     </div>
   </div> -->
+
+  <div class="white-space-100"></div>
+
+  <div id="logo" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="1000" style="margin-top:20px;">
+
+    <a href="https://unsplash.com/@marekpiwnicki" data-aos="fade-up">
+      <div class="cell-unsplash" style="background-image: URL('../../img/unsplash-icon.png');"></div>
+    </a>
+  </div>
+  <div class="white-space-100"></div>
+
+  <div style="width:100%;height: 100px"></div>
+
+  <div class="image-container"
+    style="width: 100%; height: 800px; background-image: url('/img/highres/germany-austria-3.jpg');">
+
+  </div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

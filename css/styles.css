@@ -381,3 +381,46 @@ div.image-gallery-text-overlay {
 .column-image:hover {
   filter: grayscale(0);
 }
+
+.experimental-container {
+  margin-top: 100px;
+
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.experimental-image {
+  width: 30%;
+  height: 100%;
+  background-color: blue;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 47%;
+  top: -5%;
+  -webkit-transition: all 0.7s ease-in-out 0s;
+  transition: all 0.7s ease-in-out 0s;
+  border-style: solid;
+  border-radius: 40px;
+  border-width: 7px;
+  border-color: 2a0b1d;
+
+
+}
+
+.experimental-image-top {
+  opacity: 0%;
+
+}
+
+.experimental-image-top:hover {
+  opacity: 100%;
+  border-color: c43588;
+}
+
+
+.grayout {
+  filter: grayscale(70%);
+}

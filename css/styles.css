@@ -380,6 +380,8 @@ div.image-gallery-text-overlay {
 
 .column-image:hover {
   filter: grayscale(0);
+  width: 92%;
+
 }
 
 .experimental-container {
@@ -423,4 +425,13 @@ div.image-gallery-text-overlay {
 
 .grayout {
   filter: grayscale(70%);
+}
+
+h1 {
+  font-size: small;
+  font-weight: 500;
+  width: 30%;
+  margin: auto;
+  text-align: justify;
+  text-indent: 20px;
 }

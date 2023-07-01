@@ -134,6 +134,127 @@ div.cell-unsplash:hover {
   opacity: .6;
 }
 
+div.unsplash-icon-round {
+  width: 30px;
+  height: 30px;
+  background: white;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.round-icon-container {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 40%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 10px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+  opacity: 0.3;
+
+}
+
+.round-icon-container:hover {
+  opacity: 1;
+}
+
+
+.round-icon-unsplash {
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-image: URL('../img/unsplash-icon.png');
+  background-size: cover;
+  background-position: center center;
+  top: 5px;
+  left: 6px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+
+}
+
+.round-icon-unsplash:hover {
+  opacity: 1;
+}
+
+.round-icon-download {
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: URL('../img/download-icon.jpg');
+  background-size: cover;
+  background-position: center center;
+  top: 2px;
+  left: 3px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+  z-index: 1;
+}
+
+.round-icon-download:hover {
+  opacity: 0;
+}
+
+
+.round-icon-paypal {
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-image: URL('../img/paypal.png');
+  background-size: cover;
+  background-position: center center;
+  top: 5px;
+  left: 6px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+
+}
+
+.round-icon-paypal:hover {
+  opacity: 1;
+}
+
+.round-icon-heart {
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: URL('../img/heart.png');
+  background-size: cover;
+  background-position: center center;
+  top: 5px;
+  left: 5.5px;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
+  z-index: 1;
+}
+
+.round-icon-heart:hover {
+  opacity: 0;
+}
+
+.about-paypal-button:hover {
+  width: 170px;
+  border-radius: 10px;
+}
+
+.donation-button-text {
+  margin-left: 30px;
+  letter-spacing: 4px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
 img {
   width: 100%;
   height: auto;

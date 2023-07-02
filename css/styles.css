@@ -444,18 +444,11 @@ h1 {
   /* -webkit-transition: width 0.8s, height 0.8s;
   transition: clip-path .5s; */
   pointer-events: none;
-  -webkit-mask-image: radial-gradient(circle 100px at center, black 50%, transparent 100%);
-  mask-image: radial-gradient(circle 100px at center, black 50%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 200% 200%;
-  mask-size: 200% 200%;
-  -webkit-transition: -webkit-mask-image 0.3s;
-  transition: -webkit-mask-image 0.3s;
-  transition: mask-image 0.3s;
+  z-index: 0;
+  position: absolute;
+  opacity: 0;
 }
+
 
 
 .cursor-smoke {
@@ -471,6 +464,40 @@ h1 {
   /* mix-blend-mode: difference; */
   -webkit-transition: width 0.8s, height 0.8s;
   transition: width 1.8s, height 1.8s;
-  z-index: 1;
+  z-index: 4;
 
+}
+
+.active-smoke {
+  -webkit-mask-image: radial-gradient(circle 100px at center, black 50%, transparent 100%);
+  mask-image: radial-gradient(circle 100px at center, black 50%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
+  -webkit-transition: -webkit-mask-image 0.3s;
+  transition: -webkit-mask-image 0.3s;
+  transition: mask-image 0.3s;
+  z-index: 3;
+  opacity: 1;
+}
+
+.smoke-image-text-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  color: f47f0a;
+  margin: 20px;
+}
+
+.smoke-image-name {
+  font-size: 22;
+}
+
+.smoke-image-description {
+  font-size: 15;
+  font-style: italic;
+  opacity: 0.5;
 }

@@ -447,6 +447,7 @@ h1 {
   z-index: 0;
   position: absolute;
   opacity: 0;
+
 }
 
 
@@ -500,4 +501,43 @@ h1 {
   font-size: 15;
   font-style: italic;
   opacity: 0.5;
+}
+
+
+.bike-image-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  /* -webkit-transition: width 0.8s, height 0.8s;
+  transition: clip-path .5s; */
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+.active-bike {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.text-bikepacking {
+  font-size: 20;
+}
+
+
+.text-bikepacking-under-construction {
+  width: 120px;
+  height: 20px;
+  opacity: 1;
+  color: black;
+  background-color: bdbe04;
+  font-size: x-small;
+  letter-spacing: 0;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
 }

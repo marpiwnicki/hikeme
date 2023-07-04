@@ -541,3 +541,76 @@ h1 {
   text-align: center;
   line-height: 20px;
 }
+
+
+.text-night-under-construction {
+  width: 120px;
+  height: 20px;
+  opacity: 1;
+  color: black;
+  background-color: ff9032;
+  font-size: x-small;
+  letter-spacing: 0;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+
+
+.night-image-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  /* -webkit-transition: width 0.8s, height 0.8s;
+  transition: clip-path .5s; */
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  margin-top: 0px;
+}
+
+.night-image-main-layer-person {
+  background-image: url('/img/highres/Gallery/night/Person.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 64vh;
+  margin-top: 57vh;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: height 0.8s;
+  transition: height 0.8s;
+}
+
+
+.night-image-main-layer-mountain {
+  background-image: url('/img/highres/Gallery/night/Mountains-soften.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 87vh;
+  margin-top: 34vh;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: height 0.8s;
+  transition: height 0.8s;
+}
+
+.night-image-main-layer-sky {
+  background-image: url('/img/highres/Gallery/night/Sky.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 84vh;
+  margin-top: -5vh;
+  position: absolute;
+  z-index: -2;
+  -webkit-transition: height 0.8s;
+  transition: height 0.8s;
+}

@@ -6,7 +6,7 @@ let activeRenderNumber = 0;
 window.addEventListener("wheel", handleScroll);
 
 function handleScroll(e) {
-    console.log(activeRenderNumber);
+
     if (e.deltaY < 0) {
         if (activeRenderNumber > 0) {
             allImages[activeRenderNumber].classList.remove("active-render");

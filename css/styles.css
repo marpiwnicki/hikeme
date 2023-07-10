@@ -651,7 +651,8 @@ h1 {
 }
 
 
-.fungarium-image-container {
+.fungarium-image-container,
+.herbarium-image-container {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -665,7 +666,8 @@ h1 {
   transition: opacity 0.1s;
 }
 
-.active-fungarium {
+.active-fungarium,
+.active-herbarium {
   opacity: 1;
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;

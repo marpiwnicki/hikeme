@@ -5,8 +5,9 @@ let activeRenderNumber = 0;
 
 window.addEventListener("wheel", handleScroll);
 
-function handleScroll(e) {
 
+function handleScroll(e) {
+    console.log(window.getComputedStyle(document.body).overflow);
     if (e.deltaY < 0) {
         if (activeRenderNumber > 0) {
             allImages[activeRenderNumber].classList.remove("active-render");
@@ -21,4 +22,12 @@ function handleScroll(e) {
             allImages[activeRenderNumber].classList.add("active-render");
         }
     }
+
+    if (activeRenderNumber >= allImages.length - 1)
+        document.body.style.overflow = 'scroll';
+
+    if (activeRenderNumber <= 0)
+        document.body.style.overflow = 'hidden';
+
+
 }

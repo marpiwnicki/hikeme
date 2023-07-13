@@ -82,15 +82,16 @@ div#logo img {
 .image-container {
   position: relative;
   width: 100vw;
-  height: 102vh;
+  height: 103vh;
   background-position: center;
   background-size: cover;
   /* background-image: url("/img/highres/france-italy-1.jpg"); */
-  background-attachment: scroll;
+  background-attachment: fixed;
   margin-top: -5vh;
   -webkit-transition: filter 1s;
   transition: filter 1s;
   /* background-color: red; */
+
 }
 
 .landscapes-main-image {
@@ -756,7 +757,7 @@ h1 {
 
 .gallery-more-images-box {
   width: 70px;
-  height: 3.5vh;
+  height: 30px;
   margin: 10px;
   opacity: 0.3;
   background-color: white;
@@ -764,7 +765,7 @@ h1 {
   color: black;
   font-size: 20;
   text-align: center;
-  line-height: 3.5vh;
+  line-height: 30px;
   letter-spacing: 1;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;

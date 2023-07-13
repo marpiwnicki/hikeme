@@ -154,8 +154,8 @@ div.unsplash-icon-round {
   overflow: hidden;
   position: relative;
   margin-left: 10px;
-  -webkit-transition: all 0.1s ease-in-out 0s;
-  transition: all 0.1s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
   opacity: 0.3;
 
 }
@@ -175,8 +175,8 @@ div.unsplash-icon-round {
   background-position: center center;
   top: 5px;
   left: 6px;
-  -webkit-transition: all 0.1s ease-in-out 0s;
-  transition: all 0.1s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 
 }
 

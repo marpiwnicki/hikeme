@@ -223,11 +223,12 @@ div.unsplash-icon-round {
   left: 6px;
   -webkit-transition: all 0.1s ease-in-out 0s;
   transition: all 0.1s ease-in-out 0s;
-
+  z-index: 100;
 }
 
 .round-icon-paypal:hover {
   opacity: 1;
+
 }
 
 .round-icon-heart {
@@ -250,8 +251,9 @@ div.unsplash-icon-round {
 }
 
 .about-paypal-button:hover {
-  width: 170px;
-  border-radius: 10px;
+  width: 15vw;
+  border-radius: 30px;
+
 }
 
 .donation-button-text {

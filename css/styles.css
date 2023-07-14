@@ -103,6 +103,46 @@ div#logo img {
   background-attachment: fixed;
 }
 
+.image-container-stars {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url("/img/highres/france-italy-1.jpg"); */
+  background-attachment: fixed;
+
+  -webkit-transition: filter 1s;
+  transition: filter 1s;
+  /* background-color: red; */
+
+}
+
+
+.night-image-stars {
+  width: 100vw;
+  height: 103vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  margin-top: -5vh;
+  z-index: -2;
+  opacity: 0;
+
+}
+
+.active-stars {
+  opacity: 1;
+}
+
+.main-tranistion-long {
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+  z-index: -1;
+}
+
+
 .main-image-hi {
   z-index: 0;
   height: 105vh;
@@ -627,8 +667,8 @@ div.image-gallery-text-overlay {
   margin-top: 57vh;
   position: absolute;
   z-index: 0;
-  -webkit-transition: height 0.8s;
-  transition: height 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 
@@ -642,8 +682,8 @@ div.image-gallery-text-overlay {
   margin-top: 34vh;
   position: absolute;
   z-index: -1;
-  -webkit-transition: height 0.8s;
-  transition: height 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .night-image-main-layer-sky {
@@ -656,8 +696,8 @@ div.image-gallery-text-overlay {
   margin-top: -5vh;
   position: absolute;
   z-index: -2;
-  -webkit-transition: height 0.8s;
-  transition: height 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 
@@ -683,7 +723,8 @@ div.image-gallery-text-overlay {
 
 
 .fungarium-image-container,
-.herbarium-image-container {
+.herbarium-image-container,
+.story-image-container {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -698,11 +739,20 @@ div.image-gallery-text-overlay {
 }
 
 .active-fungarium,
-.active-herbarium {
+.active-herbarium,
+.active-story {
   opacity: 1;
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
 }
+
+.story-image-container,
+.active-story {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+
 
 
 
@@ -747,6 +797,11 @@ div.image-gallery-text-overlay {
 
 .text-fungarium {
   font-size: 20;
+}
+
+.text-nature {
+  font-size: 20;
+  font-style: italic;
 }
 
 .text-fungarium-under-construction {
@@ -876,4 +931,17 @@ h1 {
 
 .image-similar-overlay:hover .image-similar-icon {
   background-color: transparent;
+}
+
+.video-container {
+  width: 50%;
+  /* height: 50vh; */
+  margin: auto;
+  position: relative;
+  top: 20%;
+  left: 25%;
+  border-radius: 50px;
+  border: 10px solid #1f1a1b;
+  /* background-color: red; */
+
 }

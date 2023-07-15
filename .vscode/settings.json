@@ -1,0 +1,5 @@
+{
+    "javascript.test.runner": "mocha",
+    "javascript.mocha.run": "test/**/*.test.js",
+    "javascript.mocha.files": "test/**/*.test.js"
+}

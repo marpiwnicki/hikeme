@@ -970,6 +970,7 @@ h1 {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   animation: animation-button 3s infinite;
+  z-index: 100;
 }
 
 .button-left:hover,
@@ -991,7 +992,7 @@ h1 {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   animation: animation-button 3s infinite;
-
+  z-index: 100;
 }
 
 @keyframes animation-button {
@@ -1008,3 +1009,73 @@ h1 {
   }
   
 }
+
+
+.landscapes-pink-panoramic-scaled {
+  height: 100vh;
+  width: 100vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:absolute;
+  top: 0vh;
+  left: 0px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.highlight {
+  left: 0vw;
+  width: 0vw;
+  
+  top: 26vh;
+  height: 30vh;
+
+  background-color: white;
+  opacity: .0;
+  position: absolute;
+  border-radius: 50px;
+  z-index: 10;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.highlight:hover {
+  opacity: .5;
+}
+
+.highlightText {
+  width: 100%; 
+  height: 10%; 
+  text-align: center; 
+  bottom: 0; 
+  position: absolute;
+  font-size: larger;
+  font-weight: 900;
+  opacity: 0;
+}
+
+
+.eye {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: transparent;
+  opacity: 0.1;
+  position: absolute;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  z-index: 10;
+  margin: 10px;
+  background: url("../img/eye-icon.png") center no-repeat transparent;
+  background-size: cover;
+}
+
+.eye:hover {
+  opacity: .9;
+}
+
+.eye:hover  ~.highlight {
+  opacity: .3;
+}
+
+

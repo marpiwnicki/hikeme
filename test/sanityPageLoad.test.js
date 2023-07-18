@@ -121,6 +121,11 @@ describe('HikeMe sanity Test Suite - page loading', () => {
         const title = await page.title();
         assert.strictEqual(title, 'Renders');
     });
+    it('gallery - respect the nature.html', async () => {
+        await page.goto(localURL + 'html/gallery/respect-the-nature.html');
+        const title = await page.title();
+        assert.strictEqual(title, 'Respect the nature');
+    });
     // it('gallery - experimental.html', async () => {
     //     await page.goto(localURL + 'html/gallery/experimental.html');
     //     const title = await page.title();

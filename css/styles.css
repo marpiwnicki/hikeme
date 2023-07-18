@@ -1131,3 +1131,30 @@ h1 {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
+
+
+.respect-story-image-container {
+  width: 5418px;
+  height: 3386px;
+  background-size: cover;
+  background-position: bottom;
+  bottom: -50%;
+  z-index: 0;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.respect-story-video-container {
+  width: 20vw;
+  /* height: 50vh; */
+  margin: auto;
+  position: absolute;
+  bottom: 34.79999999999998vh;
+  left: 39.69999999999999vw;
+  border-radius: 10px;
+  /* border: 10px solid #1f1a1b; */
+  /* background-color: red; */
+
+}

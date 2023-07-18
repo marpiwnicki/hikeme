@@ -55,7 +55,7 @@ describe('Main Gallery tests', () => {
             });
             return categoryTitles;
         });
-        assert.strictEqual(categoryTitles.length, 25);
+        assert.strictEqual(categoryTitles.length, 26);
 
     });
 

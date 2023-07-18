@@ -11,7 +11,6 @@ let switchButton = document.querySelector(".switch-button");
 let locationButtons = document.querySelectorAll(".location-button");
 
 
-
 let activeStars = 0;
 locationButtons[activeStars].classList.add("location-button-selected");
 
@@ -27,25 +26,24 @@ let scrollSpeed = 2;
 let timerId;
 
 window.addEventListener("wheel", handleScroll);
+window.addEventListener("keydown", handleScroll);
 window.addEventListener("mousemove", handleMouseMove);
 switchButton.addEventListener("click", handleSwitchButton);
 
 function handleSwitchButton(e) {
-
     locationButtons[activeStars].classList.remove("location-button-selected");
     if (activeStars == 0) activeStars = 1; else activeStars = 0;
     allStarsImagesContainers.forEach(container => { container.classList.remove("inactive"); });
     allStarsImagesContainers[activeStars].classList.add("inactive");
     locationButtons[activeStars].classList.add("location-button-selected");
-    console.log(activeStars);
 }
 
 function handleScroll(e) {
     // UP
-    if (e.deltaY < 0) {
+    if ((e.deltaY < 0) || (e.key === 'ArrowUp')) {
         if (scrollPosition >= 0) scrollPosition--;
 
-        if (scrollPosition <= 20) {
+        if (scrollPosition <= 20 && scrollPosition >= 0) {
             personPosition += scrollSpeed;
             mountainPosition += scrollSpeed;
             skyPosition += scrollSpeed;
@@ -56,12 +54,21 @@ function handleScroll(e) {
     }
 
     // DOWN
-    if (e.deltaY > 0) {
+    if ((e.deltaY > 0) || (e.key === 'ArrowDown') || (e.key === ' ')) {
         if (scrollPosition <= 25) scrollPosition++;
+        if (e.key === ' ') scrollPosition = 25;
+
         if (personPosition >= 43) {
             personPosition -= scrollSpeed;
             mountainPosition -= scrollSpeed;
             skyPosition -= scrollSpeed;
+
+            if (e.key === ' ') {
+                personPosition = 43;
+                mountainPosition = 67;
+                skyPosition = 64;
+            }
+
             mainImageLayerPerson.style.height = personPosition + "vh";
             mainImageLayerMountain.style.height = mountainPosition + "vh";
             mainImageLayerSky.style.height = skyPosition + "vh";
@@ -75,11 +82,8 @@ function handleScroll(e) {
         mainImageLayerPerson.style.opacity = 0;
         mainImageLayerMountain.style.opacity = 0;
         mainImageLayerSky.style.opacity = 0;
-
         switchButton.style.visibility = "visible";
         locationButtons.forEach(button => { button.style.visibility = "visible" });
-
-
     }
     if (scrollPosition <= 20) {
         mainImageLayerPerson.style.marginTop = 57 + "vh";
@@ -88,11 +92,13 @@ function handleScroll(e) {
         mainImageLayerPerson.style.opacity = 1;
         mainImageLayerMountain.style.opacity = 1;
         mainImageLayerSky.style.opacity = 1;
+        mainImageLayerPerson.style.height = personPosition + "vh";
+        mainImageLayerMountain.style.height = mountainPosition + "vh";
+        mainImageLayerSky.style.height = skyPosition + "vh";
 
 
         switchButton.style.visibility = "collapse";
         locationButtons.forEach(button => { button.style.visibility = "collapse" });
-
     }
 }
 

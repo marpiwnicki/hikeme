@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-color: white;
+  font-family: "Roboto Mono";
+  -ms-overflow-style: none;
+}
+
+.front-page-overlay {
+  position: absolute;
+  display: flex;
+  bottom: 10;
+  left: 15%;
+  padding: 10px;
+  align-items: center;
+
+  color: white;
+  font-size: 42px;
+  letter-spacing: 12;
+}
+
+.front-page-overlay-line {
+  background-color: ffb76b;
+  width: 3px;
+  height: 48px;
+  margin-right: 8px;
+  margin-top: 6px;
+}
+
+.front-page-overlay-page-name {
+  font-size: 20;
+}
+
+.front-page-overlay-label {
+  width: 120px;
+  height: 20px;
+
+  opacity: 1;
+
+  text-align: center;
+  color: black;
+  font-size: x-small;
+  letter-spacing: 0;
+  border-radius: 10px;
+  line-height: 20px;
+}
